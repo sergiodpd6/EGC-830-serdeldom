@@ -7,6 +7,7 @@ before_install:
 - cd decide
 install: 
 - pip install -r ../requirements.txt
+- pip install psycopg2-binary
 services:
   - postgresql
 
