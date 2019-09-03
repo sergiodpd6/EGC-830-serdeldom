@@ -16,6 +16,7 @@ only:
 
 addons:
   postgresql: "9.6"
+
 global:
   - PGPORT=5432
 
@@ -26,7 +27,11 @@ before_script:
  - python manage.py migrate
 
 script: 
-- python manage.py test
+
+- python manage.py test 
+
+addons:
+  postgresql: "9.6"
 
 
 
