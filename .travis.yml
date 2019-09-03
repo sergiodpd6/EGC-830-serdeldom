@@ -2,7 +2,7 @@ language: python
 python: 
 - "3.6"
 env: 
-  - DJANGO_SETTINGS_MODULE="decide.settings"
+- DJANGO=2.0 DB=postgres
 before_install: 
 - cd decide
 install: 
